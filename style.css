@@ -1,6 +1,33 @@
-div {
-    background-color: blueviolet;
-    height: 55%;
-    width: 55%;
+body {
+    background-color: aquamarine;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
+    font-size: 32.5%;
+    font-family: ; /*to be added later*/
+}
+h1 {
+    font-size: ; /*to be added later*/
+    color: burlywood;
+    margin-bottom: 5rem;
+}
+.container {
+    width: ;
+    height: ;
+    display: ;
+    justify-content: center;
+    align-items: center;
+    max-width: ;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
 }
