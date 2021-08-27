@@ -1,31 +1,31 @@
 body {
-    color: rgb(121, 85, 85);
+    color: rgb(5, 5, 5);
 }
 .choice-container {
     display: flex;
     margin-bottom: 2rem;
     width: 100%;
     border-radius: 4px;
-    background: ;
-    font-size: 20px;
-    min-width: ;
+    background: rgb(198, 108, 240);
+    font-size: 45px;
+    min-width: 65rem;
 }
 .choice-container:hover {
-    cursor: ;
-    box-shadow: ;
+    cursor: pointer;
+    box-shadow: rgb(90, 71, 71);
     transform: scale(1.1);
     transform: tranform 100ms;
 }
 .choice-prefix {
     padding: ;
-    color: ;
+    color: rgb(128, 128, 211);
 }
 .choice-text {
-    padding: ;
-    width: ;
+    padding: 2px;
+    width: 10px;
 }
 .incorrect {
-    background: ;
+    background: gray;
 }
 
 /* the hud 
