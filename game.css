@@ -28,6 +28,7 @@ body {
     background: gray;
 }
 
+
 /* the hud 
 #hud {
     display: flex;
@@ -54,3 +55,9 @@ body {
     background: ;
 }
 */
+
+@media screen (max-width: 768px;){
+    .choice-container {
+        min-width: 40rem;
+    }
+}
