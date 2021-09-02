@@ -22,4 +22,15 @@ let questions = [
 /*Repeat the above for every question */
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 4 /* change depending on question number */
+
+startGame = () =>{
+    questionCounter = 0
+    score = 0
+    avalibleQuestions = [...questions]
+    getNewQuestions()
+}
+
+getNewQuestions = () => {
+    if(avalibleQuestions.length === 0 || questionCounter > MAX_QUESTIONS)
+}
