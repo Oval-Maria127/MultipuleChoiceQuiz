@@ -17,7 +17,7 @@ body {
     transform: tranform 100ms;
 }
 .choice-prefix {
-    padding: ;
+    padding: 4PX ;
     color: rgb(128, 128, 211);
 }
 .choice-text {
@@ -25,11 +25,11 @@ body {
     width: 10px;
 }
 .incorrect {
-    background: gray;
+    background: rgb(221, 22, 22);
 }
 
 
-/* the hud 
+ the hud 
 #hud {
     display: flex;
     justify-content: spacebetween;
@@ -44,19 +44,19 @@ body {
 #progressBar {
     width: 30rem;
     height: 3rem;
-    border: ;
+    border: 2px;
     margin-top: 2rem;
-    border-radious: 50px;
+    border-radius: 5px;
     overflow: hidden;
 }
 #progressBarFull {
     height: 100%;
     width: 0%;
-    background: ;
+    background: white;
 }
-*/
 
-@media screen (max-width: 768px;){
+
+@media screen(max-width:768px) {
     .choice-container {
         min-width: 40rem;
     }
