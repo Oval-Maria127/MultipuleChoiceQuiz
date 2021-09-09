@@ -13,12 +13,33 @@ let avalibleQuestions = []
 
 let questions = [
     {
-    question:'  What is 2 + 8?',
-    choice1:'7',
-    choice2:'10',
-    choice3:'21',
-    answer:2
+    question:'what's the color of baby flamingoes?',
+    choice1:'Blue',
+    choice2:'Grey',
+    choice3:'Black',
+    answer: 2
     }
+    {
+     question:'What is the loudest animal in the world?',
+     choice1:'Pistol Shrimp',
+     choice2:'Lion',
+     choice3:'Howler Monkey',
+     answer: 1
+    }
+    {
+     question:'Do Dolphins use toxic pufferfish to get high?',
+     choice1:'Yes',
+     choice2:'No',
+     answer: 1
+    }
+    {
+        question:'What do Dolphins do when they see themselves in a mirror?',
+        choice1:'Attack it',
+        choice2:'Admire themselves',
+        choice3:'Ignore it',
+        answer: 2
+        }
+
 ]
 /*Repeat the above for every question */
 
