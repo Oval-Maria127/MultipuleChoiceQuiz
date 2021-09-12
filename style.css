@@ -84,3 +84,23 @@ input {
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(18, 185, 171, 0.5);
 }
+
+input::placeholder{
+    color: #fff;
+}
+
+#username {
+    margin-bottom: 3rem;
+    outline: none; /* play around with this */
+    width: 100%;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
