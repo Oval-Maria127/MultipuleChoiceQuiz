@@ -52,6 +52,10 @@ getNewQuestions=()=>{
     question.indexText= currentQuestion.question
 
     choices.forEach(choice=>{
-        const
+        const number=choice.dataset['number']
+        choice.innerText=currentQuestion['choice' + number]
     })
+
+    avalibleQuestions.splice(questionsIndex, |)
+    acceptingAnswers=true
 }
