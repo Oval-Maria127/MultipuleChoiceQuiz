@@ -37,3 +37,21 @@ startGame=()=>{
     avalibleQuestions=[...questions]
     getNewQuestions()
 }
+
+getNewQuestions=()=>{
+    if(avalibleQuestions.length === 0 || questionsCounter > MAX_QUESTIONS){
+        localStorage.setItem('mostRecentScore', score)
+        return window.location.assign('/end.html')
+    }
+    questionCounter++
+    progressText.innerText=Question ${questionCounter} of ${MAX_QUESTIONS}
+
+    progressBarFull.style.width=${(questionCounter / MAX_QUESTIONS) * 100}%
+    const questionsIndex=math.floor(math.random() * avalibleQuestions.length)currentQuestion=avalibleQuestions[questionsIndex]
+
+    question.indexText= currentQuestion.question
+
+    choices.forEach(choice=>{
+        const
+    })
+}
