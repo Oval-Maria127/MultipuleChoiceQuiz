@@ -1,8 +1,8 @@
-const.question=document.querySelector('#question');
-const.choices=array.from(document.querySelectorAll('choice-text');
-const.progressText=document.querySeelector('#progressText');
-const.scoreText=document.querySelector('#score');
-const.progressBarFull=document.querySelector('#progressBarFull');
+const question=document.querySelector('#question');
+const choices=array.from(document.querySelectorAll('choice-text');
+const progressText=document.querySeelector('#progressText');
+const scoreText=document.querySelector('#score');
+const progressBarFull=document.querySelector('#progressBarFull');
 
 let currentQuestion={}
 let acceptingAnswers=true
@@ -21,9 +21,10 @@ let questions=[
     /* add more questions like this ->
     {
         question:"what's the color of baby flamingoes?"
-        choice1:"Blue"
-        choice2:"Grey"
-        choice3:"Black"
+        choice1:"Blue,"
+        choice2:"Grey,"
+        choice3:"Black,"
+        choice4:"Pink",
         answer: 2
     } */
 ]
@@ -59,3 +60,32 @@ getNewQuestions=()=>{
     avalibleQuestions.splice(questionsIndex, |)
     acceptingAnswers=true
 }
+
+choices.forEach/choice=>{
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers=false
+        const selectedChoice=e.target
+        const selectedAnswer=selectedChoice.dataset['number']
+
+        let classToApply=selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct'){
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElementClassList.remove(classToApply)
+        setTimeout(()=>{
+            selectedChoice.parentElementClassList.remove(classToApply)
+            getNewQuestions()
+        },1000)
+    })
+}
+
+incrementScore=num=>{
+    score +=num
+    scoreText.innerText=score
+}
+
+startGame()
