@@ -1,8 +1,8 @@
-const question=document.querySelector('#question');
-const choices=array.from(document.querySelectorAll('choice-text');
-const progressText=document.querySeelector('#progressText');
-const scoreText=document.querySelector('#score');
-const progressBarFull=document.querySelector('#progressBarFull');
+const question = `document.querySelector('#question')`;
+const choices = `Array.from(document.querySelectorAll('choice-text')`;
+const progressText = `document.querySeelector('#progressText')`;
+const scoreText = `document.querySelector('#score')`;
+const progressBarFull = `document.querySelector('#progressBarFull')`;
 
 let currentQuestion={}
 let acceptingAnswers=true
@@ -12,10 +12,10 @@ let avalibleQuestions=[]
 
 let questions=[
     {
-        question:"what's the color of baby flamingoes?"
-        choice1:"Blue"
-        choice2:"Grey"
-        choice3:"Black"
+        question:"what's the color of baby flamingoes?",
+        choice1:"Blue",
+        choice2:"Grey",
+        choice3:"Black",
         answer: 2
     }
     /* add more questions like this ->
@@ -42,13 +42,14 @@ startGame=()=>{
 getNewQuestions=()=>{
     if(avalibleQuestions.length === 0 || questionsCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('/end.html')
+        return window.location.assign('/end.html') 
     }
     questionCounter++
-    progressText.innerText=Question ${questionCounter} of ${MAX_QUESTIONS}
+    progressText.innerText=Question `${questionCounter} of ${MAX_QUESTIONS}`
 
-    progressBarFull.style.width=${(questionCounter / MAX_QUESTIONS) * 100}%
-    const questionsIndex=math.floor(math.random() * avalibleQuestions.length)currentQuestion=avalibleQuestions[questionsIndex]
+    progressBarFull.style.width=`${(questionCounter / MAX_QUESTIONS) * 100}%`
+    const questionsIndex = Math.floor(math.random() * avalibleQuestions.length)
+    currentQuestions = avalibleQuestions[questionsIndex]
 
     question.indexText= currentQuestion.question
 
@@ -57,9 +58,11 @@ getNewQuestions=()=>{
         choice.innerText=currentQuestion['choice' + number]
     })
 
-    avalibleQuestions.splice(questionsIndex, |)
+    avalibleQuestions.splice(questionsIndex, 1)
     acceptingAnswers=true
 }
+
+console.log(getNewQuestions)
 
 choices.forEach/choice=>{
     choice.addEventListener('click', e => {
